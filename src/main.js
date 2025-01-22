@@ -1,6 +1,7 @@
 import express from "express";
 import logger from "pino-http";
 
+import urlRouter from "./routes/urls.js";
 import errorHandler from "./middleware/error_handler.js";
 
 const app = express();
@@ -12,6 +13,7 @@ app.get("/", (req, res) => {
 	res.send("Hello World");
 });
 
+app.use(urlRouter);
 app.use(errorHandler);
 
 app.listen(3000, () => {

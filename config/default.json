@@ -1,0 +1,5 @@
+{
+  "database": {
+    "connectionString": "postgresql://neondb_owner:Inucej73MrLh@ep-red-dream-a1rw7p4m.ap-southeast-1.aws.neon.tech/neondb?sslmode=require"
+  }
+}
